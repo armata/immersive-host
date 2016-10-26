@@ -2,22 +2,23 @@ workspace 'immersive'
     configurations { 'Debug', 'Release' }
     platforms { 'Win32', 'Win64' }
 
-    symbols "On"
-    characterset "Unicode"
+    symbols 'On'
+    characterset 'Unicode'
 
     includedirs { 'common/include/' }
 
     location 'build/'
 
-    defines { 
-        "_CRT_SECURE_NO_WARNINGS",
-        "_CRT_SECURE_NO_DEPRECATE",
-        "_CRT_NONSTDC_NO_WARNINGS",
-        "_CRT_NONSTDC_NO_DEPRECATE",
-        "_SCL_SECURE_NO_WARNINGS",
-        "_SCL_SECURE_NO_DEPRECATE",
-        "_WINSOCK_DEPRECATED_NO_WARNINGS",
-        "PUGIXML_WCHAR_MODE"
+    defines
+    { 
+        '_CRT_SECURE_NO_WARNINGS',
+        '_CRT_SECURE_NO_DEPRECATE',
+        '_CRT_NONSTDC_NO_WARNINGS',
+        '_CRT_NONSTDC_NO_DEPRECATE',
+        '_SCL_SECURE_NO_WARNINGS',
+        '_SCL_SECURE_NO_DEPRECATE',
+        '_WINSOCK_DEPRECATED_NO_WARNINGS',
+        'PUGIXML_WCHAR_MODE'
     }
 
     filter 'platforms:Win32'
@@ -109,8 +110,8 @@ project 'udis86'
     }
 
     files {
-        "vendor/udis86/libudis86/*.c",
-        "vendor/udis86/libudis86/*.h",
+        'vendor/udis86/libudis86/*.c',
+        'vendor/udis86/libudis86/*.h',
     }
 
 project 'pugixml'
